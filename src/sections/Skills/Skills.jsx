@@ -5,7 +5,7 @@ import SkillsList from '../../common/SkillsList';
 function Skills() {
   return (
     <section id="skills" className={styles.container}>
-        <h1 className='SectionTitle'>Skills</h1>
+        <h1 id="title" className='SectionTitle'>Skills</h1>
         <div className={styles.skillsList}>
             <SkillsList src={checkMarkIcon} skill="HTML"/>
             <SkillsList src={checkMarkIcon} skill="css"/>
