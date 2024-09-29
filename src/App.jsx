@@ -1,19 +1,25 @@
+import { useEffect } from 'react';
 import './App.css';
 import Contact from './sections/Contact/Contact';
+import Footer from './sections/Footer/Footer';
 import Hero from './sections/Hero/Hero';
 import Projects from './sections/Projects/Projects';
 import Skills from './sections/Skills/Skills';
-import Footer from './sections/Footer/Footer';
+import Aos from "aos";
+import "aos/dist/aos.css";
 function App() {
-  return(
+  useEffect(()=>{
+    Aos.init();
+  },[])
+  return (
     <>
-      <Hero/>
-      <Projects/>
-      <Skills/>
-      <Contact/>
-      <Footer/>
+      <Hero />
+      <Projects />
+      <Skills />
+      <Contact />
+      <Footer />
     </>
-  )
+  );
 }
 
 export default App;

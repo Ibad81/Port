@@ -1,32 +1,28 @@
 import React from 'react'
-import styles from './SkillsStyles.module.css';
-import checkMarkIcon from '../../assets/checkmark-dark.svg'
-import SkillsList from '../../common/SkillsList';
-function Skills() {
+import skills from "../../common/skills.json";
+import styles from '../../sections/Skills/SkillsStyles.module.css'
+const Skills=()=> {
   return (
-    <section id="skills" className={styles.container}>
-        <h1 id="title" className='SectionTitle'>Skills</h1>
-        <div className={styles.skillsList}>
-            <SkillsList src={checkMarkIcon} skill="HTML"/>
-            <SkillsList src={checkMarkIcon} skill="css"/>
-            <SkillsList src={checkMarkIcon} skill="Javascript"/>
-            <SkillsList src={checkMarkIcon} skill="Node"/>
-            <SkillsList src={checkMarkIcon} skill="Java"/>
-            <SkillsList src={checkMarkIcon} skill="SQL"/>
-        </div>
-        <hr/>
-        <div className={styles.skillsList}>
-            <SkillsList src={checkMarkIcon} skill="React"/>
-            
-        </div>
-        <hr/>
-        <div className={styles.skillsList}>
-            <SkillsList src={checkMarkIcon} skill="Git"/>
-            <SkillsList src={checkMarkIcon} skill="Bootstrap"/>
-            
-        </div>
-    </section>
-  )
+    <>
+    <div className={styles.skill}>
+      <h1>SKILLS</h1>
+      <div className={styles.items} >
+        {skills.map((data)=>(
+          <>
+            <div className={styles.item}
+            key={data.id}
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            >
+              <img src={require(`/src/assets/${data.imageSrc}`)} alt={data.title} />
+              <h3>{data.title}</h3>
+            </div>
+          </>
+        ))}
+      </div>
+    </div>
+    </>
+  );
 }
 
 export default Skills

@@ -4,9 +4,11 @@
     justify-content: center;
     gap: 20px;
     text-align: center;
-    height: 100dvh;
+    height: 70dvh;
     min-height: 500px;
     padding-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     .hero{
         max-width: 200px;
     }
@@ -54,15 +56,15 @@
 }
 .colorMode{
     position: absolute;
-    right: 0;
-    width: 25px;
+    right: 15%;
+    width: auto;
 }
 
 .colorMode:hover{
     cursor: pointer;
 }
 .description{
-    max-width:24ch;
+    width: auto;
 }
 .info{
     display: flex;
@@ -82,6 +84,9 @@
 
         }
     }
+    .colorMode{
+        right: 0;
+    }
 }
 @media(width>=1400px){
     .container{
@@ -92,5 +97,9 @@
             width: 400px;
             
         }
+
+    }
+    .colorMode{
+        right: 0;
     }
 }
