@@ -6,6 +6,7 @@
     text-align: center;
     height: 100dvh;
     min-height: 500px;
+    padding-top: 10%;
     .hero{
         max-width: 200px;
     }
@@ -47,6 +48,7 @@
         box-shadow: 2px 2px rgba(0,0,0,.25);
     }
 }
+
 .colorModeContainer{
     position: relative;
 }
@@ -81,7 +83,7 @@
         }
     }
 }
-@media(width>=0px){
+@media(width>=1400px){
     .container{
         
 

@@ -1,5 +1,5 @@
 import styles from './HeroStyles.module.css';
-import heroImg from '../../assets/hero-img.png';
+import heroImg from '../../assets/GIG.png';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg'
 import twitterlight from '../../assets/twitter-light.svg';
@@ -27,8 +27,11 @@ function Hero() {
             <img className={styles.colorMode} src={themeIcon} alt="Color made Icon" onClick={toggleTheme}/>
         </div>
         <div className={styles.info}>
+        <p>
+            Hello, I'm
+        </p>
         <h1 >
-            Ibad <br/>Baig
+            Ibad Baig
         </h1>
         <h2>Web Developer</h2>
         <span>
@@ -43,8 +46,7 @@ function Hero() {
             </a>
         </span>
         <p className={styles.description}>
-            With passion for developing modern React web apps For Commercial
-            businesses.
+            With passion for developing modern React web apps.
         </p>
         <a href={CV} download>
             <button className="hover">Resume</button>

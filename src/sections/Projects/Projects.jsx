@@ -19,23 +19,18 @@ function Projects() {
         p="Lore"
         />
         <ProjectCard 
-        src={BG}
+        src={Travel}
         link={'https://github.com/ibad81'}
         h3="BLOG APP"
         p="Lore"
         />
         <ProjectCard 
-        src={Travel}
+        src={BG}
         link={'https://github.com/ibad81'}
         h3="Tour"
         p="Lore"
         />
-        <ProjectCard 
-        src={Travel}
-        link={'https://github.com/ibad81'}
-        h3="Tour"
-        p="Lore"
-        />
+        
       </div>
     </section>
 
