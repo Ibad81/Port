@@ -4,9 +4,12 @@ import styles from './ContactStyles.modules.css';
 function Contact() {
   return (
     <section id="contact" className={styles.container}>
-      <h1 className="sectionTitle">Contact</h1>
+      <h1 className="sectionTitle"
+      data-aos="zoom-in-up" data-aos-duration="1200">
+      Contact
+      </h1>
       <form action="">
-        <div className="formGroup">
+        <div className="formGroup" data-aos="zoom-in-up" data-aos-duration="1200">
           <label htmlFor="name" hidden>
             Name
           </label>
@@ -18,7 +21,9 @@ function Contact() {
             required
           />
         </div>
-        <div className="formGroup">
+        <div className="formGroup"
+        data-aos="zoom-in-up" data-aos-duration="1200">
+
           <label htmlFor="email" hidden>
             Email
           </label>
@@ -30,7 +35,8 @@ function Contact() {
             required
           />
         </div>
-        <div className="formGroup">
+        <div className="formGroup"
+        data-aos="zoom-in-up" data-aos-duration="1200">
           <label htmlFor="message" hidden>
             Message
           </label>
@@ -40,7 +46,7 @@ function Contact() {
             placeholder="Message"
             required></textarea>
         </div>
-        <input className="hover btn" type="submit" value="Submit" />
+        <input className="hover btn" type="submit" value="Submit" data-aos="zoom-in-up" data-aos-duration="1200" />
       </form>
     </section>
   );

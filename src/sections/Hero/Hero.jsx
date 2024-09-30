@@ -1,5 +1,5 @@
 import styles from './HeroStyles.module.css';
-import heroImg from '../../assets/GIG.png';
+import heroImg from '../../assets/ib2.png';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg'
 import twitterlight from '../../assets/twitter-light.svg';
@@ -22,11 +22,12 @@ function Hero() {
 
   return (
     <section id="hero" className={styles.container}>
-        <div className={styles.colorModeContainer}>
+        <div className={styles.colorModeContainer} data-aos="fade-left"
+            data-aos-duration="1200">
             <img className={styles.hero} src={heroImg} alt="Profile Picture Of Ibad Baig"></img>
             <img className={styles.colorMode} src={themeIcon} alt="Color made Icon" onClick={toggleTheme}/>
         </div>
-        <div className={styles.info}>
+        <div className={styles.info} data-aos="fade-right" data-aos-duration="1200">
         <p>
             Hello, I'm
         </p>
@@ -35,13 +36,11 @@ function Hero() {
         </h1>
         <h2>Web Developer</h2>
         <span>
-            <a href="https:twitter.com" target='_blank'>
-                <img src={twitterIcon} alt="Twitter Icon"></img>
-            </a>
-            <a href="https:github.com" target='_blank'>
+            
+            <a href="https://github.com/Ibad81" target='_blank'>
                 <img src={githubIcon} alt="Github Icon"></img>
             </a>
-            <a href="https:linkedin.com" target='_blank'>
+            <a href="https://www.linkedin.com/in/ibad-baig-06226b1ba/" target='_blank'>
                 <img src={linkedinIcon} alt="Linkedin Icon"></img>
             </a>
         </span>

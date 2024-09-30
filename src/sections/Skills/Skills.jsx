@@ -15,7 +15,7 @@ const Skills=()=> {
             data-aos-duration="1000"
             >
               <img src={require(`/src/assets/${data.imageSrc}`)} alt={data.title} />
-              <h3>{data.title}</h3>
+              <p className={styles.hed3}>{data.title}</p>
             </div>
           </>
         ))}
