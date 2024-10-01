@@ -24,13 +24,14 @@ function Projects() {
         src={Travel}
         link={'https://github.com/Ibad81/Tour'}
         h3="BLOG APP"
-        p="Developed a dynamic, responsive personal blog using React, HTML, CSS, and JavaScript."
+          p="Built a responsive tour booking app with interactive features using React, HTML, CSS, and JavaScript."
         />
         <ProjectCard 
         src={BG}
         link={'https://github.com/Ibad81/blog'}
         h3="Tour"
-        p="Built a responsive tour booking app with interactive features using React, HTML, CSS, and JavaScript."
+        p="Developed a dynamic, responsive personal blog using React, HTML, CSS, and JavaScript."
+
         />
         
       </div>
