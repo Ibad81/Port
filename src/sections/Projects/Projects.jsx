@@ -8,7 +8,8 @@ import ProjectCard from '../../common/ProjectCard';
 function Projects() {
   return (
     <section id="projects" className={styles.container}>
-      <h1 className='sectionTitle'>
+      <h1 className='sectionTitle' data-aos="zoom-in"
+     data-aos-duration="1200">
         Projects
       </h1>
       <div className={styles.projectsContainer}>

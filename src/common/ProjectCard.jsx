@@ -9,7 +9,8 @@ function ProjectCard({src,link,h3,p}) {
           <h3>{h3}</h3>
           
     </a>
-    <p>{p}</p>
+    <p data-aos="zoom-in"
+     data-aos-duration="1200">{p}</p>
     </>
   )
 }

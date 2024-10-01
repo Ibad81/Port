@@ -5,7 +5,8 @@ const Skills=()=> {
   return (
     <>
     <div className={styles.skill}>
-      <h1>SKILLS</h1>
+      <h1 data-aos="zoom-in"
+     data-aos-duration="1200">SKILLS</h1>
       <div className={styles.items} >
         {skills.map((data)=>(
           <>

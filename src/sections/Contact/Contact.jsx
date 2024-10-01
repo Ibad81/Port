@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import styles from './ContactStyles.modules.css';
 
 const Contact=()=> {
@@ -22,7 +22,9 @@ const Contact=()=> {
 
     if (res.success) {
       console.log("Success", res);
+      event.target.reset();
     }
+    
   };
   return (
     <section id="contact" className={styles.container}>
